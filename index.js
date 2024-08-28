@@ -21,7 +21,7 @@ const sequelize = new Sequelize(
 const User = userModel(sequelize);
 
 app.use(express.json());
-app.get('/', (res,req) => {
+app.get('/', (req,res) => {
     res.send('Hi')
 });
 
